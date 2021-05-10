@@ -9,13 +9,11 @@
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
         <header class="post-header">
-            <a id="blog-logo" href="{{@site.url}}">
-                {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="Blog Logo" />
-                {{else}}
-                    {{@site.title}}
-                {{/if}}
-            </a>
+            <h1>
+                <a href="{{@site.url}}">
+                   {{@site.title}}
+                </a>
+            </h1>
             <div class="inner">
                 {{> "site-nav"}}
             </div>
